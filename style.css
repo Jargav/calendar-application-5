@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: o;
-  box-sizing: border-box;  
-}
+
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -10,70 +6,10 @@ body {
   line-height: 1;
 }
  
-form {
-  min-height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-form input,
-form button {
-  padding: 0.5rem;
-  font-size: 4rem;
-  border: none;
-  background: greenyellow;
-}
-
-form button {
-  color: blue;
-  background: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-form button hover {
-  background: blue;
-  color: white;
-}
-
-.todo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.todo-List {
-  min-width: 30%;
-  list-style: none;
-}
-
-.todo{
-  margin: 0.5rem;
-  background: white;
+#header {
+  text-align: center;
   color: black;
-  font-size: 1.5rem;
-  display: flex;
-  Justify-content: space-between;
-  align-items: center;
-
-}
-
-.todo li{
-  flex: 1;
-}
-
-.trash-btn, .complete-btn{
-  background: blue;
-  color: greenyellow;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.complete-btn {
-  background: green;
+  border-bottom: 10px solid black;
 }
 
 textarea{
@@ -83,6 +19,8 @@ textarea{
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  width:100%;
+  min-height: 80px;
 }
 
 .jumbotron {
@@ -95,6 +33,7 @@ textarea{
 
 .description{
   white-space: pre-wrap;
+  padding:0;
 }
 
 .time-block{
@@ -102,31 +41,45 @@ textarea{
   border-radius: 15px;
 }
 
+
+
+
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  min-height: 80px;
+  border-top: 1px solid white;
+  margin-top: 2px;
+  
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  border-left: 1px dashed #000000;
+}
+
+.dayHour {
+  margin-bottom: 0;
 }
 
 .past {
   background-color: #d3d3d3;
   color: white;
+  cursor: pointer;
 }
 
 .present {
   background-color: #ff6961;
   color: white;
+  cursor: pointer;
 }
 
 .future {
   background-color: #77dd77;
   color: white;
+  cursor: text;
+  cursor: pointer;
 }
 
 .saveBtn {
@@ -135,9 +88,22 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  cursor: pointer;
+  min-height: 80px;
+  position: relative;
+  background-color: #06AED5;
+  color: white;
+  cursor: pointer;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+#icon {
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-top: 5px;
+}
+
